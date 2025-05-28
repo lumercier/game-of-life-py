@@ -1,6 +1,7 @@
 import pygame, sys
 from simulation import Simulation
 from menu import show_menu
+from menu2 import show_menu2
 
 pygame.init()
 
@@ -41,7 +42,7 @@ while True:
                 pygame.display.set_caption("Game of Life by Lucas Mercier - Paused")
 
             elif event.key == pygame.K_ESCAPE:
-                show_menu(window, WINDOW_WIDTH, WINDOW_HEIGHT, FPS)
+                show_menu2(window, WINDOW_WIDTH, WINDOW_HEIGHT, FPS)
                 
 
     #2. Updating State
